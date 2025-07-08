@@ -1,0 +1,257 @@
+/* Root */
+:root {
+    --title-color: #fff;
+    --text-color: #ccc;
+    --background-color: #000000;
+    --accent-kleur: #ff0000;
+    --border-radius: 0.5rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus, *:focus-visible {
+    outline: 1px solid white;
+    outline-offset: 3px;
+    z-index: 1000;
+    position: relative;
+}
+
+
+/* Titles and text */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+}
+
+h1 {
+    font-size: clamp(2.5rem, -0.1rem + 5vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(2rem, -0.1rem + 5vw, 2.3rem);
+    border-bottom: 2px solid var(--accent-kleur);
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    max-width: max-content;
+}
+
+h3 {
+    font-size: clamp(1.1rem, -0.1rem + 5vw, 1.3rem);
+    border-bottom: 2px solid var(--accent-kleur);
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    max-width: max-content;
+}
+
+a {
+    color: var(--accent-kleur);
+    text-decoration: underline;
+    text-underline-offset: .125em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    margin-left: 1rem; 
+}
+
+/* Body */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.2;
+    font-size: clamp(1rem, -0.1rem + 5vw, 1.1rem);
+
+    background-image: url('../img/background-wallpaper.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body .body {
+    padding: 1rem;
+}
+
+section {
+    max-width: 920px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(6px);
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section:first-of-type {
+    margin-top: 1rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.single-project-header {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #353535;
+}
+
+.single-project-header p {
+    font-size: 0.9rem;
+    color: #979797;
+}
+
+header {
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(6px);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+header ul li:not(:last-of-type):after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 1px;
+    background: var(--text-color);
+    bottom: -0.25rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+header ul li  {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+}
+
+ul.projects {
+    list-style-type: none;
+}
+
+ul.projects li {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul.projects li:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+ul.projects li h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.certificaten .row-items {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.certificaten .row-items a {
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.certificaten .row-items a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+/* Icons */
+
+.icon-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-content p {
+    margin-bottom: 0;
+}
+
+.icon-content svg {
+    height: 1em;
+    width: 1em;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #9C9696;
+    background-color: #000;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 640px) {
+    header {
+        padding: 1.5rem;
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    header ul li {
+        width: unset;
+    }
+    header ul li:not(:last-of-type):after {
+        width: 1px;
+        height: 100%;
+        bottom: 0;
+        left: unset;
+        right: -0.5rem;
+        margin: auto;
+    }
+    section {
+        padding: 1.5rem;
+    }
+}
