@@ -1,0 +1,118 @@
+{
+  "section": {
+    "aboutMe": {
+      "title": "Over mij",
+      "greeting": "Hey, leuk dat je hier terecht bent gekomen 👋",
+      "description1": "Ik ben Gert — een nieuwsgierige geest met een zwak voor muziek, fotografie, technologie, getunede auto's, reizen en koken. In alles wat ik doe, wil ik begrijpen *hoe* iets werkt. Of het nou gaat om het perfect garen van een stuk vlees of het optimaliseren van een auto: ik duik er vol in, ook als dat betekent dat ik af en toe flink onderuit ga. Vallen en opstaan hoort erbij.",
+      "description2": "Mijn weg naar development was niet heel rechtlijnig. Ik heb van alles geprobeerd — van bouwkunde tot economie — maar pas toen ik voor een schoolopdracht een webshop moest beheren, ging er een vuurtje branden. Sindsdien ben ik niet meer gestopt met leren, sleutelen en bouwen.",
+      "description3": "Ik hou ervan om kleine tools te maken die mijn leven makkelijker maken, zowel op werkgebied als daarbuiten. Denk aan scripts die development versimpelen, maar ook dingen die gewoon handig zijn in het dagelijks leven.",
+      "techStackTitle": "Ik werk nu met:",
+      "techStack": [
+        "PHP / JavaScript / HTML",
+        "Python (begonnen, maar enthousiast)",
+        "WordPress (themes, plugins, WCAG-proof)",
+        "Git, natuurlijk."
+      ],
+      "teamwork": "Ik werk het liefst in een team waar open communicatie en plezier centraal staan. Je doet het samen — net als bij een goede maaltijd of een roadtrip.",
+      "callToAction": "Voel je vrij om even rond te kijken tussen m'n repo's — of stuur een berichtje als je zin hebt om te sparren of iets leuks te bouwen. Altijd leuk om andere developers te ontmoeten 😉"
+    },
+    "education": {
+      "title": "Opleidingen",
+      "vmbo": {
+        "title": "VMBO GT Economie & ondernemen",
+        "period": "Driestar College Gouda | aug 2015 - jun 2019",
+        "description": "Gemengd theoretische leerlijn. Keuzedeel: Economie & ondernemen. Certificaat behaald bij Young Company, voor het runnen van een bedrijf (Casus)."
+      },
+      "mbo": {
+        "title": "Mbo4 software developer",
+        "period": "Hoornbeeck College Gouda | aug 2019 - jun 2022",
+        "description": "Keuzedeel: Frontend Development. Verschillende certificaten behaald."
+      },
+      "hbo": {
+        "title": "Bachelor software development",
+        "period": "Novi College Utrecht | aug 2023 - heden",
+        "description": "Diepgang in software development, werkprocessen en businessmanagement."
+      }
+    },
+    "work": {
+      "title": "Werkervaring",
+      "coop": {
+        "title": "COOP Bakkerij",
+        "period": "dec 2018 - okt 2021",
+        "description": "Elke zaterdag van 06:00 tot 15:00 op de bakkerij. De supermarkt was een mooie instap baan om wat geld te verdienen."
+      },
+      "lmpr": {
+        "title": "LMPR",
+        "period": "aug 2022 - heden",
+        "description": "WordPress specialist, backend developer en website ontwikkeling."
+      }
+    },
+    "internships": {
+      "title": "Stage",
+      "lmpr": {
+        "title": "LMPR",
+        "period": "aug 2020 - feb 2021",
+        "description": "Meehelpen aan het bouwen van websites voor klanten."
+      },
+      "levellevel": {
+        "title": "Level Level",
+        "period": "aug 2021 - feb 2022",
+        "description": "Met Twig en het ReactJS framework heb ik bijgedragen aan development projecten en interne opdrachten."
+      }
+    },
+    "certificates": {
+      "title": "Certificaten",
+      "programming": {
+        "title": "Programmeren",
+        "description": "De basis van mijn professionele carriere",
+        "sql": "SQL",
+        "css": "CSS",
+        "rwd": "Responsive Web Design"
+      },
+      "a11y": {
+        "title": "A11y Webaccessibility",
+        "description": "Toegankelijkheid is voor iedereen belangrijk. Daarom heb ik 2 cursussen gevolgd om mijn code in webdevelopment toegankelijk voor iedereen te maken!",
+        "basic": "The basics",
+        "code": "Accessible code"
+      },
+      "react": {
+        "title": "Framework? Framework!",
+        "description": "Frameworks zijn de toekomst, daarom heb ik een volledige all-in-one cursus gevolgd om ReactJS helemaal onder de knie te krijgen.",
+        "link": "ReactJS"
+      }
+    },
+    "projects": {
+      "title": "Projecten",
+      "filmscriptie": {
+        "title": "Filmscriptie Tool",
+        "stack": "Python3 | API",
+        "description": "Python tool om films te zoeken, filteren en watchlists te beheren.",
+        "link": "Bekijk op GitHub →"
+      },
+      "xml": {
+        "title": "XML crawler",
+        "stack": "Python3",
+        "description": "Python mini tool om alle geïndexeerde urls uit een WP site te halen.",
+        "link": "Bekijk op GitHub"
+      },
+      "edc": {
+        "title": "Schoolproject: EDC",
+        "stack": "HTML | CSS | PHP | SQL | Dart",
+        "description1": "Een online omgeving voor doktoren & patiënten. Deze kunnen inloggen, medische documenten lezen en bijvoorbeeld medicijnen voorschrijven.",
+        "description2": "Inclusief functionele app voor android!",
+        "link": "Bekijk op GitHub"
+      },
+      "portfolio": {
+        "title": "Dit portfolio!",
+        "stack": "HTML | JS | CSS",
+        "description": "Leuk om je eigen 'online presence' een beetje bij te houden via Git. Erg leerzaam om pro-actief met versiebeheer en code bezig te zijn.",
+        "link": "Bekijk de code op Github"
+      }
+    },
+    "socials": {
+      "title": "Socials",
+      "linkedin": "Gert Knibbe",
+      "email": "gertknibbe03@gmail.com"
+    }
+  }
+}
