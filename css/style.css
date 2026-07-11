@@ -47,10 +47,17 @@ h3 {
     max-width: max-content;
 }
 
+h4, .h4-style {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-width: max-content;
+}
+
 a {
     color: var(--accent-kleur);
     text-decoration: underline;
-    text-underline-offset: .125em;
+    text-underline-offset: .25em;
     max-width: max-content;
     border-radius: 0.25rem;
 
@@ -91,8 +98,7 @@ header nav ul {
 }
 
 nav a.current {
-  border-bottom: 2px solid white;
-  color: yellow;
+    color: var( --title-color);
 }
 
 /* Body */
@@ -153,7 +159,7 @@ ul.projects {
     list-style-type: none;
 }
 
-ul.projects li {
+ul.projects > li {
     background-color: #1e1e1e;
     padding: 1rem;
     margin-left: 0;
@@ -162,7 +168,7 @@ ul.projects li {
     gap: 1rem;
 }
 
-ul.projects li:not(:last-of-type) {
+ul.projects > li:not(:last-of-type) {
     margin-bottom: 1rem;
 }
 
