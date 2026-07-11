@@ -1,35 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const navLinks = document.querySelectorAll(".menu-nav-link");
+  const sections = document.querySelectorAll("section[id]");
+
+  function setCurrentLink(sectionId) {
+    navLinks.forEach(link => {
+      const linkId = link.getAttribute("href").substring(1);
+      link.classList.toggle("current", linkId === sectionId);
+    });
+  }
 
   navLinks.forEach(link => {
     link.addEventListener("click", function () {
-      navLinks.forEach(el => el.classList.remove("current"));
-      this.classList.add("current");
+      setCurrentLink(this.getAttribute("href").substring(1));
     });
   });
-
-  const sections = document.querySelectorAll("section[id]");
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const id = entry.target.id;
-        navLinks.forEach(link => {
-          const href = link.getAttribute("href").substring(1);
-          if (href === id) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");
-          }
-        });
+        setCurrentLink(entry.target.id);
       }
     });
   }, {
-    threshold: 0.6
+    threshold: 0,
+    rootMargin: "-25% 0px -65% 0px"
   });
 
-  sections.forEach(section => {
-    observer.observe(section);
-  });
+  sections.forEach(section => observer.observe(section));
 });

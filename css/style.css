@@ -60,7 +60,6 @@ a {
     text-underline-offset: .25em;
     max-width: max-content;
     border-radius: 0.25rem;
-
 }
 
 a:hover {
@@ -75,6 +74,7 @@ ul li {
 
 header {
     padding: 1rem;
+    padding-top: .25rem;
     background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(6px);
     display: flex;
@@ -86,6 +86,10 @@ header {
     z-index: 2;
 }
 
+header .logo-wrapper {
+    margin-bottom: .5rem;
+}
+
 header em {
     font-size: 0.9rem;
 }
@@ -94,6 +98,7 @@ header nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -131,7 +136,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 10rem;
 }
 
 section:first-of-type {
@@ -238,12 +243,14 @@ footer {
 @media screen and (min-width: 640px) {
     header {
         padding: 1.5rem;
+        padding-top: .25rem;
+
     }
     section {
         padding: 1.5rem;
     }
     .socials-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
